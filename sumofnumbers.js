@@ -26,15 +26,14 @@ function sumReccursion(list){
     if(list.length === 0){
       return 0;
     }
-    else{
-        return list[0] + sumReccursion(list.slice(1, list.length));
-    }
+      return list[0] + sumReccursion(list.slice(1, list.length));
 }
 
 console.log(sumReccursion(data));
 
 function sumTheSimpleWay(list){
-    return _.reduce(list, function(memo, num){return memo + num}, 0);
+    let sum41 =  _.reduce(list, function(memo, num){return memo + num}, 0);
+    return sum41;
 }
 
 console.log(sumTheSimpleWay(data));
